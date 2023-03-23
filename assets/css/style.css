@@ -75,7 +75,7 @@ body{
     
 }
 
-.fbtn .btn-primary {
+.btn-primary {
     color: #eceee9;
     background-color: #60A401;
     border-color:#60A401;
@@ -94,6 +94,16 @@ body{
 .card-item:hover{
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 22.64%, rgba(34, 0, 105, 0.79) 88.68%, rgba(47, 16, 113, 0.7) 88.68%);
 }
+.type .card{
+    width: 20rem; 
+    
+}
+
+
+.type .card:hover{
+    background-color: #60A401;
+    color: #eceee9;
+}
 @media only screen and (max-width: 1900px){
     .section_p{
         padding: 60px 20px 60px 20px ;    
@@ -101,6 +111,7 @@ body{
     ul{
         font-size: 10px;
     }
+    
 }
 
 
@@ -109,6 +120,9 @@ body{
         text-align: center;
         background: rgba(0, 0, 0, 0.5);
     }
+    .section_p{
+        padding: 60px 2px 60px 2px ;    
+    } 
     .logo img{
         height:50px ;
         width: 140px; 
@@ -146,9 +160,7 @@ body{
         text-align: center;
         background: rgba(0, 0, 0, 0.5);
     }
-    .section_p{
-        padding: 2% 2% 2% 2% ;
-    } 
+    
     .logo img{
         height:35px ;
         width: 100px; 
@@ -176,7 +188,7 @@ body{
         
     }
     .section_p{
-        padding: 60px 5px 60px 5px ;    
+        padding: 60px 0px 60px 0px ;    
     } 
     ul{
         font-size: 10px;
