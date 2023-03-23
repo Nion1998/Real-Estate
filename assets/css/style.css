@@ -94,21 +94,23 @@ body{
 .card-item:hover{
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 22.64%, rgba(34, 0, 105, 0.79) 88.68%, rgba(47, 16, 113, 0.7) 88.68%);
 }
-.type .card{
-    width: 20rem; 
-    
-}
+
 
 
 .type .card:hover{
     background-color: #60A401;
     color: #eceee9;
 }
+
+
 @media only screen and (max-width: 1900px){
     .section_p{
         padding: 60px 20px 60px 20px ;    
     } 
     ul{
+        font-size: 10px;
+    }
+    .blog_txt{
         font-size: 10px;
     }
     
@@ -149,6 +151,8 @@ body{
         line-height: .9;
         
     }
+    
+    
 
     
     
@@ -193,4 +197,5 @@ body{
     ul{
         font-size: 10px;
     }
+    
 }
