@@ -11,7 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--  CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <!--  Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,16 +20,17 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top border-bottom ">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top border-bottom">
             <div class="container-fluid">
-                <a class="navbar-brand logo " href="#"><img src="./assets/Inages/Group 59.png" alt=""></a>
+                <a class=" logo" href="#"><img src="./assets/Inages/Group 59.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3 fs-5 ">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0 me-3 fs-5 ">
                         <li class="nav-item">
                             <a class="nav-link px-4 me-4  text-light fw-bolder " href="#">INDEX</a>
                         </li>
@@ -54,7 +55,8 @@
                 </div>
             </div>
         </nav>
-
+        <!-- Navbar end -->
+        <!-- Carousel start -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -64,18 +66,20 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active ">
+            <div class="carousel-inner ">
+                <div class="carousel-item  active ">
                     <img src="./assets/Inages/vu-anh-TiVPTYCG_3E-unsplash 1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption ">
-                        <h5>BEST PLACE TO FIND HOME</h5>
-                        <p> Allow us to guide you through the innovative stress free approach in finding
-                            your dream
-                            properties.</p>
-                        <button type="button" class="btn btn-outline-info px-3  py-2 m-2">Get Started
-                            Now <i class="fa-sharp fa-solid fa-arrow-right ps-2 "></i></button>
-                        <button type="button" class="btn btn-outline-info px-3 py-2 m-2">Get Started Now <i
-                                class="fa-sharp fa-solid fa-arrow-right ps-2 "></i></button>
+                    <div class="carousel-caption  ">
+                        <div>
+                            <h5>BEST PLACE TO FIND HOME</h5>
+                            <p> Allow us to guide you through the innovative stress free approach in finding
+                                your dream
+                                properties.</p>
+                            <button type="button" class="btn btn-outline-info px-3  py-2 m-2">Get Started
+                                Now <i class="fa-sharp fa-solid fa-arrow-right ps-2 "></i></button>
+                            <button type="button" class="btn btn-outline-info px-3 py-2 m-2">Get Started Now <i
+                                    class="fa-sharp fa-solid fa-arrow-right ps-2 "></i></button>
+                        </div>
 
                     </div>
                 </div>
@@ -119,11 +123,13 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
+        <!-- Carousel end -->
     </header>
     <main>
-        <section class="filter" style="background-color:#E6E6E6 ; ">
-            <div class="section_p">
+
+        <!-- Filter start -->
+        <section class="filter py-4" style="background-color:#E6E6E6 ; ">
+            <div class="container-xl  ">
                 <div class="row m-4 g-4">
                     <div class="col-lg-3 col-md-6 ">
                         <select class="form-select p-lg-3 mt-lg-3" aria-label="Default select example">
@@ -191,9 +197,11 @@
 
             </div>
         </section>
-        <section>
+        <!-- Filter end -->
 
-            <div class="section_p ">
+        <!-- PROPERTIES start -->
+        <section>
+            <div class="container-xl my-4 py-4">
                 <div class="fs-2 ps-4 m-2">FEATURED <span style="color: #60A401;">PROPERTIES</span> </div>
                 <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
                 <div class="row mt-4 mx-4 g-4">
@@ -371,8 +379,10 @@
 
             </div>
         </section>
+        <!-- PROPERTIES end -->
 
-        <section class="section_p type">
+        <!-- LOOKING  start -->
+        <section class="container-xl my-4 py-4 type">
             <div class="fs-2 ps-4 m-2">WHAT ARE YOU <span style="color: #60A401;">LOOKING FOR</span></div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
             <div class="row mt-4 mx-4 g-4">
@@ -668,8 +678,10 @@
                         <i class="fa-sharp fa-solid fa-arrow-right ps-2 "></i></button></div>
             </div>
         </section>
+        <!-- LOOKING  end -->
 
-        <section class="section_p type">
+        <!-- PROPERTIES start -->
+        <section class="container-xl my-4 py-4 type">
             <div class="fs-2 ps-4 m-2">WHAT ARE YOU <span style="color: #60A401;">LOOKING FOR</span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
             <div class="row mt-4 mx-4 g-4">
@@ -757,8 +769,10 @@
 
             </div>
         </section>
+        <!-- PROPERTIES  end -->
 
-        <section class="section_p ">
+        <!-- PLACES  start -->
+        <section class="container-xl my-4 py-4  ">
 
             <div class="fs-2 ps-4 m-2">POPULAR <span style="color: #60A401;">PLACES </span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
@@ -771,7 +785,7 @@
                                 <img src="./assets/Inages/place1.png">
                                 <div class="card-item">
                                     <div class=" d-flex justify-content-end p-4">
-                                        <div class="px-3 py-2 " style="background-color: #60A401">50 PROPERTIES
+                                        <div class="px-3 py-sm-2 " style="background-color: #60A401">50 PROPERTIES
                                         </div>
                                     </div>
                                 </div>
@@ -791,7 +805,7 @@
                                 <img src="./assets/Inages/place1.png">
                                 <div class="card-item">
                                     <div class=" d-flex justify-content-end p-4">
-                                        <div class="px-3 py-2 " style="background-color: #60A401">50 PROPERTIES
+                                        <div class="px-3 py-sm-2  " style="background-color: #60A401">50 PROPERTIES
                                         </div>
                                     </div>
                                 </div>
@@ -811,7 +825,7 @@
                                 <img src="./assets/Inages/place1.png">
                                 <div class="card-item">
                                     <div class=" d-flex justify-content-end p-4">
-                                        <div class="px-3 py-2 " style="background-color: #60A401">50 PROPERTIES
+                                        <div class="px-3 py-sm-2  " style="background-color: #60A401">50 PROPERTIES
                                         </div>
                                     </div>
                                 </div>
@@ -831,7 +845,7 @@
                                 <img src="./assets/Inages/place1.png">
                                 <div class="card-item">
                                     <div class=" d-flex justify-content-end p-4">
-                                        <div class="px-3 py-2 " style="background-color: #60A401">50 PROPERTIES
+                                        <div class="px-3 py-sm-2 " style="background-color: #60A401">50 PROPERTIES
                                         </div>
                                     </div>
                                 </div>
@@ -853,7 +867,7 @@
                         <img src="./assets/Inages/place2.png">
                         <div class="card-item">
                             <div class=" d-flex justify-content-end p-4">
-                                <div class="px-3 py-2 " style="background-color: #60A401">50 PROPERTIES</div>
+                                <div class="px-3 py-sm-2 " style="background-color: #60A401">50 PROPERTIES</div>
                             </div>
                         </div>
                         <div class="card-item d-flex align-items-end">
@@ -868,8 +882,10 @@
                 </div>
             </div>
         </section>
+        <!-- PLACES  end -->
 
-        <section class="section_p type">
+        <!-- AGENTS  start -->
+        <section class="container-xl my-4 py-4 type">
             <div class="fs-2 ps-4 m-2">OUR <span style="color: #60A401;">AGENTS</span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
             <div class="row mt-4 mx-4 g-4">
@@ -918,7 +934,10 @@
 
             </div>
         </section>
-        <section class="section_p type">
+        <!-- AGENTS  end -->
+
+        <!-- BLOGS  start -->
+        <section class="container-xl my-4 py-4  type ">
             <div class="fs-2 ps-4 m-2">OUR <span style="color: #60A401;">BLOGS</span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
             <div class="row mt-4 mx-4 g-4">
@@ -928,10 +947,10 @@
                         <div class="card-body  py-4">
                             <div class="fs-3 mb-2">Selling Your Home</div>
                             <div class=" d-flex blog_txt align-items-center pb-3 ">
-                                <P class="me-3"><span class="pe-2"><i class="fa-solid fa-user"></i></span> Admin</P>
-                                <P class="me-3"><span class="pe-2"><i class="fa-regular fa-calendar"></i></i></span>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-solid fa-user"></i></span> Admin</P>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-regular fa-calendar"></i></i></span>
                                     Sept 24, 2022</P>
-                                <P class="me-3"><span class="pe-2"><i class="fa-regular fa-message"></i></i></span>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-regular fa-message"></i></i></span>
                                     Comment</P>
                             </div>
                             <div class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna
@@ -947,10 +966,10 @@
                         <div class="card-body  py-4">
                             <div class="fs-3 mb-2">Selling Your Home</div>
                             <div class="d-flex  blog_txt align-items-center pb-3 ">
-                                <P class="me-3"><span class="pe-2"><i class="fa-solid fa-user"></i></span> Admin</P>
-                                <P class="me-3"><span class="pe-2"><i class="fa-regular fa-calendar"></i></i></span>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-solid fa-user"></i></span> Admin</P>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-regular fa-calendar"></i></i></span>
                                     Sept 24, 2022</P>
-                                <P class="me-3"><span class="pe-2"><i class="fa-regular fa-message"></i></i></span>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-regular fa-message"></i></i></span>
                                     Comment</P>
                             </div>
                             <div class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna
@@ -966,10 +985,10 @@
                         <div class="card-body  py-4">
                             <div class="fs-3 mb-2">Selling Your Home</div>
                             <div class=" d-flex blog_txt align-items-center pb-3 ">
-                                <P class="me-3"><span class="pe-2"><i class="fa-solid fa-user"></i></span> Admin</P>
-                                <P class="me-3"><span class="pe-2"><i class="fa-regular fa-calendar"></i></i></span>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-solid fa-user"></i></span> Admin</P>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-regular fa-calendar"></i></i></span>
                                     Sept 24, 2022</P>
-                                <P class="me-3"><span class="pe-2"><i class="fa-regular fa-message"></i></i></span>
+                                <P class="me-3"><span class="pe-md-2"><i class="fa-regular fa-message"></i></i></span>
                                     Comment</P>
                             </div>
                             <div class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna
@@ -982,8 +1001,10 @@
 
             </div>
         </section>
+        <!-- BLOGS  end -->
 
-        <footer class="section_p type">
+        <!-- Footer  start -->
+        <footer class="container-xl ">
             <div class="row mt-4 mx-4 g-4">
                 <div class="col-lg-3 col-md-6 ">
                     <div class="fs-3 pb-3">Contact Us</div>
@@ -1030,18 +1051,17 @@
 
             </div>
         </footer>
-
-
-
-
+        <!-- Footer  end -->
 
     </main>
 
-    <script src="./assets/js/indext.js"></script>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Index Js -->
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
