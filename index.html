@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--  Green Sock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+
     <title>Real Estate</title>
 </head>
 
@@ -67,9 +73,9 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner ">
-                <div class="carousel-item  active ">
+                <div class="carousel-item  active  ">
                     <img src="./assets/Inages/vu-anh-TiVPTYCG_3E-unsplash 1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption  ">
+                    <div class="carousel-caption   " style="background-color: #050605a1 ;">
                         <div>
                             <h5>BEST PLACE TO FIND HOME</h5>
                             <p> Allow us to guide you through the innovative stress free approach in finding
@@ -85,7 +91,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/Inages/vu-anh-TiVPTYCG_3E-unsplash 1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption " style="background-color: #050605a1 ;">
                         <h5>BEST PLACE TO FIND HOME</h5>
                         <p> Allow us to guide you through the innovative stress free approach in finding
                             your dream
@@ -99,7 +105,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/Inages/vu-anh-TiVPTYCG_3E-unsplash 1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption ">
+                    <div class="carousel-caption " style="background-color: #050605a1 ;">
                         <h5>BEST PLACE TO FIND HOME</h5>
                         <p> Allow us to guide you through the innovative stress free approach in finding
                             your dream
@@ -132,12 +138,14 @@
             <div class="container-xl  ">
                 <div class="row m-4 g-4">
                     <div class="col-lg-3 col-md-6 ">
-                        <select class="form-select p-lg-3 mt-lg-3" aria-label="Default select example">
-                            <option selected>Area From</option>
-                            <option value="1">One</option>
+                        <select class="form-select p-lg-3 mt-lg-3 pe-auto" aria-label="Default select example">
+                            <option selected class=" pe-auto">Area From</option>
+                            <option class="pe-auto"><a href="">One</a></option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
+
+
                     </div>
                     <div class="col-lg-3 col-md-6 ">
                         <select class="form-select p-lg-3 mt-lg-3" aria-label="Default select example">
@@ -180,8 +188,15 @@
                         </select>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <label for="customRange1" class="form-label">$400</label>
-                        <input type="range" class="form-range" id="customRange1">
+
+                        <div class="price-slider">
+
+                            <label for="customRange1" class="form-label" id="price-value">$50</label>
+                            <input type="range" id="price-range" class="form-range" name="price-range" min="0"
+                                max="10000" value="50">
+
+                        </div>
+
 
                     </div>
                     <div class="col-lg-3 col-md-6 ">
@@ -204,7 +219,18 @@
             <div class="container-xl my-4 py-4">
                 <div class="fs-2 ps-4 m-2">FEATURED <span style="color: #60A401;">PROPERTIES</span> </div>
                 <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
+                <div class="fs-5 ps-4 m-2">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
                 <div class="row mt-4 mx-4 g-4">
+
                     <div class="col-lg-4 col-md-6 ">
                         <div class="card text-light">
                             <img src="./assets/Inages/Mask group (2).png">
@@ -220,7 +246,7 @@
                                     <div class="fs-4 px-4 pb-3">Star Avenue</div>
                                     <ul class="d-flex " style="list-style:none;">
                                         <li>4 Beds</li>
-                                        <li class="px-2 ">|</li>
+                                        <li class="px-2">|</li>
                                         <li>4 Baths</li>
                                         <li class="px-2">|</li>
                                         <li>920 SQ</li>
@@ -388,23 +414,24 @@
                 <div class="container-xl d-flex justify-content-between">
                     <div class="text-center text-light ">
                         <p class=""><img src="./assets/Inages/Group.svg" class=" " alt="Your SVG file"></p>
-                        <p class="fs-3">1200</p>
+                        <p class="fs-3"><span class="counter">500</span></p>
                         <div class="fs-5">List For Sale</div>
+
                     </div>
                     <div class="text-center text-light ">
                         <p class="img-section"><img src="./assets/Inages/Vector2.svg" class=" " alt=" Your SVG file">
                         </p>
-                        <p class="fs-3">1200</p>
+                        <p class="fs-3"><span class="counter">1300</span></p>
                         <div class="fs-5">List For Sale</div>
                     </div>
                     <div class="text-center text-light ">
                         <p class=""><img src="./assets/Inages/Vector3.svg" class=" " alt="Your SVG file"></p>
-                        <p class="fs-3">1200</p>
+                        <p class="fs-3"><span class="counter">1200</span></p>
                         <div class="fs-5">List For Sale </div>
                     </div>
                     <div class="text-center text-light ">
                         <p class=""><img src="./assets/Inages/Vector4.svg" class=" " alt="Your SVG file"></p>
-                        <p class="fs-3">1200</p>
+                        <p class="fs-3"><span class="counter">1500</span></p>
                         <div class="fs-5">List For Sale</div>
                     </div>
 
@@ -416,6 +443,15 @@
         <section class="container-xl my-4 py-4 type">
             <div class="fs-2 ps-4 m-2">WHAT ARE YOU <span style="color: #60A401;">LOOKING FOR</span></div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
+            <div class="fs-5 ps-4 m-2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <div class="row mt-4 mx-4 g-4">
                 <div class="col-lg-3 col-md-6  ">
                     <div class="card align-items-center">
@@ -717,6 +753,15 @@
         <section class="container-xl my-4 py-4 type">
             <div class="fs-2 ps-4 m-2">WHAT ARE YOU <span style="color: #60A401;">LOOKING FOR</span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
+            <div class="fs-5 ps-4 m-2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <div class="row mt-4 mx-4 g-4">
                 <div class="col-lg-3 col-md-6 ">
                     <div class="card">
@@ -809,7 +854,15 @@
 
             <div class="fs-2 ps-4 m-2">POPULAR <span style="color: #60A401;">PLACES </span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
-
+            <div class="fs-5 ps-4 m-2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <div class="row mt-4 mx-4 g-4">
                 <div class="col-lg-8  ">
                     <div class="row">
@@ -921,6 +974,16 @@
         <section class="container-xl my-4 py-4 type">
             <div class="fs-2 ps-4 m-2">OUR <span style="color: #60A401;">AGENTS</span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
+            <div class="fs-5 ps-4 m-2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
             <div class="row mt-4 mx-4 g-4">
                 <div class="col-lg-3 col-md-6 ">
                     <div class="card">
@@ -973,6 +1036,15 @@
         <section class="container-xl my-4 py-4  type ">
             <div class="fs-2 ps-4 m-2">OUR <span style="color: #60A401;">BLOGS</span> </div>
             <p class="fs-5 ps-4 m-2">Lorem ipsum dolor sit amet, consfdf ajdfa loren loren loren loren </p>
+            <div class="fs-5 ps-4 m-2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <div class="row mt-4 mx-4 g-4">
                 <div class="col-lg-4 col-md-6 ">
                     <div class="card">
@@ -1052,19 +1124,19 @@
 
                         <div>
                             <div class="fs-3 pb-3">Property Types</div>
-                            <p>Apartments</p>
-                            <p>Houses</p>
-                            <p>Restaurants</p>
-                            <p>Villa & Condo</p>
-                            <p>Family House</p>
+                            <p><a href="" class="text-reset text-decoration-none ">Apartments</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Houses</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Restaurants</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Villa & Condo</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Family House</a></p>
                         </div>
                         <div>
                             <div class="fs-3 pb-3 pe-lg-4">Quick Links</div>
-                            <p>About Us</p>
-                            <p>Services</p>
-                            <p>Property Details</p>
-                            <p>My Account</p>
-                            <p>Privacy Policy</p>
+                            <p><a href="" class="text-reset text-decoration-none ">About Us</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Services</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Property Details</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">My Account</a></p>
+                            <p><a href="" class="text-reset text-decoration-none ">Privacy Policy</a></p>
                         </div>
 
 
@@ -1079,7 +1151,15 @@
                                     id="basic-addon2"><img src="./assets/Inages/send.png" alt=""></span>
                             </div>
                         </div>
-                        <img src="./assets/Inages/fb.png" class="mt-4 ps-lg-4 ms-lg-4" alt="">
+
+                        <div class="mt-4 ps-lg-4 ms-lg-4">
+                            <a href="https://www.facebook.com/"><img src="./assets/Inages/s1.png" class="pe-2"
+                                    alt=""></a>
+                            <a href=""><img src="./assets/Inages/s2.png" class="pe-2" alt=""></a>
+                            <a href=""><img src="./assets/Inages/s3.png" class="pe-2" alt=""></a>
+                            <a href=""><img src="./assets/Inages/s4.png" class="pe-1" alt=""></a>
+                            <a href=""><img src="./assets/Inages/s5.png" alt=""></a>
+                        </div>
                     </div>
 
 

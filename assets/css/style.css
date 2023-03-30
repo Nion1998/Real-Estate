@@ -36,22 +36,23 @@ body{
     background: #fff;
 }
 .nav-link{
-    transition: all 0.2s ;
     position: relative;
 }
-.nav-link:hover{
-    transition: all 0.2s ;
-    position: relative;
-}
-.nav-link:hover::after{
+.nav-link:after{
     content:'';
-    height: 3px;
-    width: 100%;
+    height: 4px;
     background-color: #020202;
     position: absolute;
+    width: 0;
     bottom: 0;
     left: 0;
+    transition: all .5s ;
 }
+.nav-link:hover:after{
+    width: 100%;
+}
+
+
 .carousel-item{
     height: 100vh;
     min-height: 300px; 
@@ -88,20 +89,29 @@ body{
     background-color: #60A401;
     border-color:#60A401;
 }
+.card_text{
+    height: px;
+    transition: all .5s ;
+}
+.card_text:hover{
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 22.64%, rgba(34, 0, 105, 0.79) 88.68%, rgba(47, 16, 113, 0.7) 88.68%);
+
+}
 .card{
     position: relative;
-    
+    transition: all .5s ;
 }
 .card-item{
     width: 100%;
     height: 100%;
     position: absolute;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 22.64%, rgba(34, 0, 105, 0.79) 88.68%, rgba(47, 16, 113, 0.7) 88.68%);
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 42.69%, #050505 100%, rgba(0, 0, 0, 0.69) 100%);
+    transition: all 1s ;
 }
-.card-item:hover{
+.card:hover .card-item{
     background: linear-gradient(180deg, rgba(217, 217, 217, 0) 22.64%, rgba(34, 0, 105, 0.79) 88.68%, rgba(47, 16, 113, 0.7) 88.68%);
 }
+
 
 .type .card:hover{
     background-color: #60A401;
@@ -128,6 +138,20 @@ body{
 .list {
    height: 400px;
 }
+
+.filter select {
+    cursor: pointer !important;
+} 
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #60A401;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
 
 
 
